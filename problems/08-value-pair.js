@@ -1,7 +1,8 @@
 /***********************************************************************
 Write a function `valuePair(obj1, obj2, key)` that takes in two objects
-and a key (string). The function should return an array containing the
-corresponding values of the objects for the given key.
+and a key (string).
+The function should return an array
+containing the corresponding values of the objects for the given key.
 
 Examples:
 let object1 = {name: 'One', location: 'NY', age: 3};
@@ -11,7 +12,10 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
 function valuePair(obj1, obj2, key) {
-  // your code here
+  let value1 = obj1[key];
+  let value2 = obj2[key];
+  
+  return [value1, value2];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
